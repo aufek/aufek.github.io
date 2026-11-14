@@ -23,7 +23,7 @@
     position: relative;
     background: #fff; border: 3px solid #000;
     font-size: clamp(15px, 3.6vw, 22px);
-    padding: 1.4em; text-align: center;
+    padding: 1.4em; text-align: center; width: 12.2em;
     aspect-ratio: 1 / 1; box-sizing: border-box;
     display: flex; flex-direction: column; align-items: center; justify-content: center;
   }
@@ -31,6 +31,8 @@
     height: calc(3.83em - 4px); width: auto; display: block; margin: 0 auto;
     image-rendering: pixelated;
   }
+  .pig { position: relative; }
+  .pig p { position: absolute; top: 100%; left: 50%; transform: translateX(-50%); white-space: nowrap; }
   .card p {
     margin: 1.4em 0 0; font-size: 1em; line-height: 1.15;
     font-weight: 900; letter-spacing: 0.15em; padding-left: 0.15em; text-transform: uppercase;
@@ -39,8 +41,7 @@
 </head>
 <body>
   <div class="card">
-    <img src="pig-trim.png" alt="aufek pig">
-    <p>Coming soon</p>
+    <div class="pig"><img src="pig-trim.png" alt="aufek pig"><p>Coming soon</p></div>
   </div>
 </body>
 </html>
