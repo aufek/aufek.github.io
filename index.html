@@ -22,17 +22,16 @@
   .card {
     position: relative;
     background: #fff; border: 3px solid #000;
-    width: min(230px, 65vw); aspect-ratio: 1 / 1; box-sizing: border-box;
-    display: flex; flex-direction: column; align-items: center; justify-content: center;
-    text-align: center;
+    font-size: clamp(15px, 3.6vw, 22px);
+    padding: 1.4em; text-align: center;
   }
   .card img {
-    width: min(100px, 25vw); height: auto; display: block; margin: 0 auto;
+    height: calc(7.9em - 8px); width: auto; display: block; margin: 0 auto;
     image-rendering: pixelated;
   }
   .card p {
-    margin: 8px 0 0; font-size: clamp(15px, 3.6vw, 22px);
-    font-weight: 900; letter-spacing: 0.15em; text-transform: uppercase;
+    margin: 8px 0 0; font-size: 1em; line-height: 1.15;
+    font-weight: 900; letter-spacing: 0.15em; padding-left: 0.15em; text-transform: uppercase;
   }
 </style>
 </head>
